@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/es-portfolio-app/static/css/main.2e9eda7c.css",
+    "main.js": "/es-portfolio-app/static/js/main.fefde96c.js",
+    "static/media/adham-dannaway-half-face.jpg": "/es-portfolio-app/static/media/adham-dannaway-half-face.bc042e97a7c10834d240.jpg",
+    "index.html": "/es-portfolio-app/index.html",
+    "main.2e9eda7c.css.map": "/es-portfolio-app/static/css/main.2e9eda7c.css.map",
+    "main.fefde96c.js.map": "/es-portfolio-app/static/js/main.fefde96c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e9eda7c.css",
+    "static/js/main.fefde96c.js"
+  ]
+}
