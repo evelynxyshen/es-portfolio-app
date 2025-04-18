@@ -1,0 +1,73 @@
+/* Homepage Container */
+.homepage {
+  @apply flex flex-col bg-white text-gray-800 min-h-screen;
+}
+
+/* Top Panel */
+.homepage-top-panel {
+  @apply relative h-[50vh] bg-white text-gray-800 flex items-center justify-center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect at the bottom edge */
+}
+
+/* Bottom Panel */
+.homepage-bottom-panel {
+  @apply bg-gray-100 py-16 px-8;
+}
+
+/* Grid Layout */
+.homepage-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto;
+}
+
+/* Hero Section */
+.homepage-hero {
+  @apply relative w-full flex items-center justify-center text-center bg-gradient-to-b from-gray-900 to-gray-800 text-white;
+  background-size: cover; /* Ensure the background covers the entire area */
+  background-position: center; /* Center the background image */
+  height: 100%; /* Make the hero section fill the top panel */
+}
+
+.hero-content {
+  @apply max-w-4xl px-4;
+}
+
+.hero-title {
+  @apply text-6xl font-bold mb-6;
+}
+
+.hero-subtitle {
+  @apply text-lg mb-8;
+}
+
+.hero-buttons {
+  @apply flex justify-center gap-4;
+}
+
+.hero-button {
+  @apply px-6 py-3 bg-cyan-500 text-white font-bold rounded-lg hover:bg-cyan-600 transition-all duration-300;
+}
+
+.hero-button-secondary {
+  @apply px-6 py-3 bg-gray-200 text-gray-800 font-bold rounded-lg hover:bg-gray-300 transition-all duration-300;
+}
+
+/* Bottom Panel */
+.homepage-bottom-panel {
+  @apply bg-gray-100 py-16 px-8;
+}
+
+.homepage-title-container {
+  @apply flex items-center justify-center mb-12;
+}
+
+.homepage-title {
+  @apply text-2xl font-bold text-gray-800 uppercase mx-4;
+}
+
+.homepage-title-line {
+  @apply flex-grow h-[1px] bg-gray-400;
+}
+
+.homepage-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto;
+}

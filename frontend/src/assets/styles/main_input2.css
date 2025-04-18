@@ -1,0 +1,526 @@
+/* Include Tailwind's base styles */
+@tailwind base;
+
+/* Include Tailwind's component styles */
+@tailwind components;
+
+/* Include Tailwind's utility styles */
+@tailwind utilities;
+
+/* Custom styles */
+
+/* Homepage Section */
+.homepage-section {
+  @apply flex flex-col items-center justify-center h-screen bg-gradient-to-br from-gray-100 to-gray-300 text-gray-800;
+}
+
+/* Hero Section */
+.hero {
+  @apply text-center py-20 bg-gray-100;
+}
+
+.hero-title {
+  @apply text-5xl font-bold text-gray-800 mb-4;
+}
+
+.hero-description {
+  @apply text-lg text-gray-600 mb-8;
+}
+
+.hero-buttons {
+  @apply flex justify-center gap-4;
+}
+
+.hero-button {
+  @apply px-6 py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-all duration-300;
+}
+
+.hero-button-secondary {
+  @apply px-6 py-3 bg-gray-200 text-gray-800 font-bold rounded-lg hover:bg-gray-300 transition-all duration-300;
+}
+
+/* Latest Work Section */
+.latest-work-section {
+  @apply py-16 bg-white;
+}
+
+.latest-work-title {
+  @apply text-4xl font-bold text-gray-800 mb-12 text-center;
+}
+
+.latest-work-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8;
+}
+
+/* Work Item Container */
+.work-item {
+  @apply relative overflow-hidden rounded-lg shadow-lg;
+}
+
+/* Work Item Image */
+.work-item img {
+  @apply h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-110;
+}
+
+/* Image Overlay */
+.work-item-overlay {
+  @apply inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+}
+
+/* Text Overlay */
+.work-item-text {
+  @apply flex flex-col justify-end p-6 bg-gradient-to-t from-black via-transparent to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+}
+
+/* Title */
+.work-item h3 {
+  @apply text-xl font-bold mb-1;
+}
+
+/* Description */
+.work-item p {
+  @apply text-sm;
+}
+
+/* Work Item Image */
+.work-image {
+  @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-110;
+}
+
+/* Overlay for Work Item */
+.portfolio-overlay {
+  @apply absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 transition-opacity duration-500 group-hover:opacity-100;
+}
+
+/* Work Item Title */
+.work-title {
+  @apply text-2xl font-bold text-white mb-2;
+}
+
+/* Work Item Description */
+.work-description {
+  @apply text-sm text-gray-300;
+}
+
+/* Background colors for panels */
+.bg-about {
+  @apply bg-gradient-to-br from-blue-500 to-blue-700;
+}
+
+.bg-designer {
+  @apply bg-gradient-to-br from-pink-400 to-pink-600;
+}
+
+.bg-coder {
+  @apply bg-gradient-to-br from-blue-400 to-blue-600;
+}
+
+.bg-features {
+  @apply bg-gray-100 text-gray-800;
+}
+
+/* Panel hover effects */
+.panel {
+  @apply flex-1 flex justify-center items-center relative overflow-hidden transition-all duration-500 cursor-pointer;
+}
+
+.panel:hover {
+  @apply flex-[1.5];
+}
+
+.panel-content {
+  @apply text-center opacity-80 transition-opacity duration-300;
+}
+
+.panel:hover .panel-content {
+  @apply opacity-100;
+}
+
+/* Typography */
+.panel-title {
+  @apply text-5xl font-bold mb-4;
+}
+
+.panel-text {
+  @apply text-lg leading-relaxed;
+}
+
+/* Contact Section */
+.contact-section {
+  @apply flex h-screen;
+}
+
+.contact-left {
+  @apply flex-1 flex flex-col justify-center items-center bg-gradient-to-br from-gray-100 to-gray-300 text-gray-800 p-8;
+}
+
+.contact-title {
+  @apply text-5xl font-bold mb-6 text-center;
+}
+
+.contact-description {
+  @apply text-lg mb-8 text-center max-w-md;
+}
+
+.contact-form {
+  @apply w-full max-w-lg bg-white p-8 rounded-lg shadow-lg;
+}
+
+.contact-form input,
+.contact-form textarea {
+  @apply w-full p-4 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.contact-form textarea {
+  @apply resize-none h-32;
+}
+
+.contact-form button {
+  @apply w-full py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-all duration-300;
+}
+
+/* Right Section: Background Image */
+.contact-right {
+  @apply flex-1 bg-cover bg-center;
+  background-image: url('adham-dannaway-half-face.jpg'); /* Replace with your actual image */
+}
+
+/* Contact Page */
+.contact-page {
+  @apply flex flex-col h-screen;
+}
+
+/* Top Panel: Contact Methods */
+.contact-top {
+  @apply flex flex-1 h-96; /* Ensure the container has height */
+}
+
+.contact-left {
+  @apply flex-1 flex flex-col justify-center items-center text-center bg-gradient-to-br from-gray-100 to-gray-300 text-gray-800 p-8;
+}
+
+.contact-heading {
+  @apply text-5xl font-bold mb-4;
+}
+
+.contact-subheading {
+  @apply text-lg mb-6;
+}
+
+.contact-links {
+  @apply flex gap-4;
+}
+
+.contact-link {
+  @apply px-6 py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-all duration-300;
+}
+
+/* Bottom Panel: Contact Form */
+.contact-bottom {
+  @apply flex flex-1 bg-gray-100 justify-center items-center p-8;
+}
+
+.contact-form {
+  @apply w-full max-w-4xl bg-white p-8 rounded-lg shadow-lg;
+}
+
+.form-title {
+  @apply text-3xl font-bold mb-6 text-center;
+}
+
+.form-fields {
+  @apply flex flex-col md:flex-row gap-4 mb-4; /* Stack vertically on small screens, horizontally on medium+ screens */
+}
+
+.contact-input {
+  @apply flex-1 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.contact-textarea {
+  @apply w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none h-32 mb-4;
+}
+
+.contact-button {
+  @apply w-full py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-all duration-300;
+}
+
+/* Form Container */
+.contact-form-container {
+  @apply min-h-screen bg-[#0e0e0e] text-white flex items-center justify-center px-4 py-20;
+}
+
+.contact-form-wrapper {
+  @apply w-full max-w-2xl;
+}
+
+.contact-form {
+  @apply space-y-6 bg-[#1a1a1a] p-8 rounded-2xl shadow-2xl;
+}
+
+/* Form Fields */
+.contact-form-label {
+  @apply text-sm uppercase tracking-wider;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  @apply bg-transparent border border-gray-700 rounded-md px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all duration-300;
+}
+
+.contact-form-textarea {
+  @apply resize-none;
+}
+
+/* Submit Button */
+.contact-form-button {
+  @apply w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-md transition duration-300 shadow-md hover:shadow-cyan-400/50;
+}
+
+/* Header Styles */
+header {
+  @apply fixed top-0 left-0 w-full z-50 bg-[#0e0e0e]/70 backdrop-blur-md border-b border-gray-800;
+}
+
+header .header-container {
+  @apply max-w-7xl mx-auto px-4 py-4 flex items-center justify-between;
+}
+
+header .logo {
+  @apply text-cyan-400 font-mono text-xl font-semibold tracking-wide;
+}
+
+header nav {
+  @apply hidden md:flex space-x-8 text-sm font-light text-gray-300;
+}
+
+header nav a {
+  @apply hover:text-white relative;
+}
+
+header nav a::after {
+  @apply absolute left-0 -bottom-1 h-[1px] w-0 bg-cyan-400 transition-all duration-300;
+  content: "";
+}
+
+header nav a:hover::after {
+  @apply w-full;
+}
+
+header .mobile-menu-toggle {
+  @apply md:hidden text-gray-300;
+}
+
+header .mobile-menu {
+  @apply md:hidden bg-[#0e0e0e] border-t border-gray-800;
+}
+
+header .mobile-menu nav {
+  @apply flex flex-col items-start space-y-4 px-6 py-4 text-sm text-gray-300;
+}
+
+header .mobile-menu nav a {
+  @apply hover:text-white transition-colors;
+}
+
+/* Portfolio Page */
+.portfolio-page {
+  @apply flex flex-col bg-white text-gray-800 min-h-screen;
+}
+
+/* Content Below Header */
+.content-below-header {
+  @apply flex flex-col; /* Remove pt-16 from here */
+}
+
+/* Top Panel */
+.portfolio-top-panel {
+  @apply relative z-10; /* Ensure it stays above the bottom panel */
+  @apply bg-gradient-to-b from-gray-100 to-white; /* Add gradient background */
+  @apply shadow-lg; /* Add shadow for depth */
+  @apply pb-16; /* Add padding to ensure spacing for the hero content */
+}
+
+/* Bottom Panel */
+.portfolio-bottom-panel {
+  @apply relative bg-white rounded-t-lg shadow-lg -mt-16 pt-16; /* Add pt-16 here to account for the header height */
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8 py-16 max-w-7xl mx-auto;
+}
+
+.portfolio-item {
+  @apply relative overflow-hidden rounded-lg shadow-lg bg-white border border-gray-200 transition-transform duration-300 hover:scale-105;
+}
+
+.portfolio-image {
+  @apply w-full h-64 object-cover;
+}
+
+.portfolio-overlay {
+  @apply absolute inset-0 bg-gray-900 bg-opacity-50 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-100;
+}
+
+.portfolio-item-title {
+  @apply text-xl font-bold text-white mb-2;
+}
+
+.portfolio-item-description {
+  @apply text-sm text-gray-300;
+}
+
+/* Hero Section */
+.portfolio-hero {
+  @apply relative h-[70vh] bg-gradient-to-b from-gray-100 to-white flex items-center justify-center text-center shadow-lg;
+  margin-bottom: -4rem; /* Negative margin to overlap the bottom panel */
+  z-index: 10; /* Ensure the hero section is above the bottom panel */
+}
+
+.portfolio-title {
+  @apply text-5xl font-bold mb-4 text-gray-900;
+}
+
+.portfolio-subtitle {
+  @apply text-lg text-gray-600;
+}
+
+/* Bottom Panel (Portfolio Grid) */
+.portfolio-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8 py-16 max-w-7xl mx-auto bg-white rounded-t-lg shadow-lg;
+  z-index: 5; /* Ensure it is below the hero section */
+  position: relative;
+}
+
+/* Homepage Hero Section */
+.homepage-hero {
+  @apply relative h-[70vh] bg-gradient-to-b from-blue-100 to-white flex items-center justify-center text-center shadow-lg;
+}
+
+.homepage-title {
+  @apply text-5xl font-bold mb-4 text-gray-900;
+}
+
+.homepage-subtitle {
+  @apply text-lg text-gray-600;
+}
+
+/* Homepage Page */
+.homepage-page {
+  @apply flex flex-col bg-white text-gray-800 min-h-screen;
+}
+
+/* Content Below Header */
+.content-below-header {
+  @apply flex flex-col; /* Remove pt-16 from here */
+}
+
+/* Top Panel */
+.homepage-top-panel {
+  @apply relative z-10; /* Ensure it stays above the bottom panel */
+  @apply bg-gradient-to-b from-blue-100 to-white; /* Add gradient background */
+  @apply shadow-lg; /* Add shadow for depth */
+}
+
+/* Bottom Panel */
+.homepage-bottom-panel {
+  @apply relative bg-white rounded-t-lg shadow-lg -mt-16 pt-16; /* Add pt-16 here to account for the header height */
+}
+
+/* Hero Section */
+.hero-section {
+  @apply relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-gray-800 to-gray-900 text-white;
+}
+
+.hero-title {
+  @apply text-6xl font-bold mb-4;
+}
+
+.hero-subtitle {
+  @apply text-xl mb-8;
+}
+
+.hero-buttons {
+  @apply flex justify-center gap-4;
+}
+
+.hero-button {
+  @apply px-6 py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-all duration-300;
+}
+
+.hero-button-secondary {
+  @apply px-6 py-3 bg-gray-200 text-gray-800 font-bold rounded-lg hover:bg-gray-300 transition-all duration-300;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  @apply py-16 bg-gray-100;
+}
+
+.portfolio-title {
+  @apply text-4xl font-bold text-gray-800 mb-12 text-center;
+}
+
+.portfolio-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8;
+}
+
+.portfolio-item {
+  @apply overflow-hidden rounded-lg shadow-lg;
+}
+
+.portfolio-item img {
+  @apply h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-110;
+}
+
+.portfolio-item .absolute {
+  @apply inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+}
+
+.portfolio-item .flex {
+  @apply inset-0 justify-end p-6 bg-gradient-to-t from-black via-transparent to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+}
+
+.portfolio-item h3 {
+  @apply text-xl font-bold mb-1;
+}
+
+.portfolio-item p {
+  @apply text-sm;
+}
+
+/* Footer Section */
+.footer {
+  @apply py-8 bg-gray-800 text-white text-center;
+}
+
+.footer p {
+  @apply text-sm;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .split-panel {
+    @apply flex-col;
+  }
+
+  .panel {
+    @apply flex-1;
+  }
+
+  .panel:hover {
+    @apply flex-1;
+  }
+
+  .contact-section {
+    @apply flex-col;
+  }
+
+  .contact-left {
+    @apply p-6;
+  }
+
+  .latest-work-grid {
+    @apply grid-cols-1;
+  }
+}
