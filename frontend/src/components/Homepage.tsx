@@ -43,6 +43,7 @@ const Homepage: React.FC = () => {
           {portfolioItems.map((item) => (
             <ProjectCard
               key={item.id}
+              id={item.id} // Pass the ID to the ProjectCard
               title={item.title}
               description={item.description}
               image={item.image}
