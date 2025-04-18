@@ -6,6 +6,9 @@
 @layer components {
   @import './footer.css';
   @import './header.css';
+  @import './about.css';
+  @import './aboutpanel.css';
+  @import './aboutratiopanel.css';
   @import './homepage.css';
 }
 

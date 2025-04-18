@@ -1,0 +1,48 @@
+/* Skills Panel Container */
+.skills-panel-container {
+  @apply w-full py-16 px-8; /* Full width with padding */
+}
+
+/* Title */
+.skills-panel-title {
+  @apply text-4xl font-bold mb-8; /* Large title */
+}
+
+/* Skills Chart Container */
+.skills-chart-container {
+  @apply relative flex justify-center items-end h-64; /* Chart height */
+}
+
+/* Vertical Axis */
+.skills-vertical-axis {
+  @apply absolute left-0 bottom-0 flex flex-col justify-between h-full text-right pr-4; /* Vertical axis styling */
+}
+
+.skills-axis-level {
+  @apply text-gray-600 text-sm; /* Axis level text styling */
+}
+
+/* Skills Chart */
+.skills-chart {
+  @apply flex justify-center items-end space-x-4 ml-12; /* Horizontal alignment for bars */
+}
+
+/* Skill Bar Container */
+.skill-bar-container {
+  @apply flex flex-col items-center; /* Center-align bars and labels */
+}
+
+/* Skill Bar */
+.skill-bar {
+  @apply w-12 bg-cyan-500 rounded-t-lg transition-all duration-300; /* Bar styling */
+}
+
+/* Skill Name */
+.skill-name {
+  @apply mt-2 text-lg font-medium text-gray-700; /* Skill name styling */
+}
+
+/* Skill Percentage */
+.skill-percentage {
+  @apply text-sm text-gray-500; /* Percentage styling */
+}

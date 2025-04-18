@@ -1,0 +1,26 @@
+/* About Panel Container */
+.about-panel-container {
+  @apply w-full py-16 px-8; /* Full width with padding */
+}
+
+/* Left Panel */
+.about-panel-left {
+  @apply flex-1 text-center lg:text-left px-8; /* Responsive alignment */
+}
+
+.about-panel-title {
+  @apply text-4xl font-bold mb-4; /* Large title */
+}
+
+.about-panel-text {
+  @apply text-lg text-gray-700; /* Description text */
+}
+
+/* Right Panel */
+.about-panel-right {
+  @apply flex-1 px-8 mt-8 lg:mt-0; /* Responsive spacing */
+}
+
+.about-panel-image {
+  @apply w-full max-w-sm mx-auto lg:mx-0 rounded-lg shadow-lg; /* Image styling */
+}
