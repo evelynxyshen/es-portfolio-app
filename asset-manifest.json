@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/es-portfolio-app/static/css/main.2e9eda7c.css",
-    "main.js": "/es-portfolio-app/static/js/main.fefde96c.js",
-    "static/media/adham-dannaway-half-face.jpg": "/es-portfolio-app/static/media/adham-dannaway-half-face.bc042e97a7c10834d240.jpg",
+    "main.css": "/es-portfolio-app/static/css/main.5b22aef9.css",
+    "main.js": "/es-portfolio-app/static/js/main.7a3543a0.js",
+    "static/media/profile.jpg": "/es-portfolio-app/static/media/profile.bc042e97a7c10834d240.jpg",
+    "static/media/pie-chart.png": "/es-portfolio-app/static/media/pie-chart.5064f252136c57020c92.png",
+    "static/media/feature2.jpg": "/es-portfolio-app/static/media/feature2.08bd703a1f4407985897.jpg",
     "index.html": "/es-portfolio-app/index.html",
-    "main.2e9eda7c.css.map": "/es-portfolio-app/static/css/main.2e9eda7c.css.map",
-    "main.fefde96c.js.map": "/es-portfolio-app/static/js/main.fefde96c.js.map"
+    "main.5b22aef9.css.map": "/es-portfolio-app/static/css/main.5b22aef9.css.map",
+    "main.7a3543a0.js.map": "/es-portfolio-app/static/js/main.7a3543a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e9eda7c.css",
-    "static/js/main.fefde96c.js"
+    "static/css/main.5b22aef9.css",
+    "static/js/main.7a3543a0.js"
   ]
 }
