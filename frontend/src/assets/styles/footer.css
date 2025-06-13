@@ -1,0 +1,8 @@
+/* Footer Section */
+.footer {
+  @apply py-8 bg-gray-800 text-white text-center;
+}
+
+.footer p {
+  @apply text-sm;
+}

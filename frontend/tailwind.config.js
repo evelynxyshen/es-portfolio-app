@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}", // Include all React components
-    "./public/index.html",        // Include the HTML file
+    "./src/assets/styles/*.css", // Include all CSS files in the styles folder
+    "./public/index.html", // Include the HTML file
   ],
   theme: {
     extend: {
@@ -15,7 +16,7 @@ module.exports = {
       fontFamily: {
         mono: ['"Fira Code"', 'monospace'], // Merged mono font family
       },
-    },
+},
   },
   plugins: [],
 };

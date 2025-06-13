@@ -1,0 +1,32 @@
+/* Project Card */
+.project-card {
+  @apply relative overflow-hidden rounded-lg shadow-lg bg-white;
+}
+
+.project-card-image-container {
+  @apply relative;
+}
+
+.project-card-image {
+  @apply w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110;
+}
+
+.project-card-overlay {
+  @apply absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 transition-opacity duration-500 group-hover:opacity-100;
+}
+
+.project-card-title {
+  @apply text-lg font-bold text-gray-800;
+}
+
+.project-card-description {
+  @apply text-sm text-gray-600;
+}
+
+.project-card-content {
+  @apply bg-white p-4;
+}
+
+.project-card-description-overlay {
+  @apply text-sm text-gray-300;
+}

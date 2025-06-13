@@ -1,10 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from "./components/Homepage";
+import Portfolio from "./components/Portfolio"; // Import the Portfolio component
+import ProjectPage from "./components/ProjectPage"; // Import the ProjectPage component
+import About from "./components/About"; // Import the About component
 import Header from './components/Header';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Footer from './components/Footer'; // Import the Footer component
 import './assets/styles/main_output.css';
 
 const App: React.FC = () => {
@@ -13,15 +14,13 @@ const App: React.FC = () => {
             <Header />
             <main className="pt-16"> {/* Add padding-top to account for the header height */}
                 <Routes>
-                    <Route path="/about" element={<About />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="*" element={<Homepage />} /> {/* Default route */}
+                    <Route path="/" element={<Homepage />} />
+                    <Route path="/about" element={<About />} /> {/* About page route */}
+                    <Route path="/portfolio" element={<Portfolio />} /> {/* Portfolio page route */}
+                    <Route path="/project/:id" element={<ProjectPage />} /> {/* Dynamic route for project pages */}
                 </Routes>
             </main>
-            <footer className="text-center py-4">
-                <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
-            </footer>
+            <Footer /> {/* Use the Footer component */}
         </Router>
     );
 };

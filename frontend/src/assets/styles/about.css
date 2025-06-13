@@ -1,0 +1,13 @@
+/* About Page */
+.about-page {
+  @apply w-full;
+}
+
+/* Panels */
+.about-panel {
+  @apply relative w-full py-16 px-8; /* Full width with padding */
+}
+
+.about-panel + .about-panel {
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1); /* Shadow effect between panels */
+}

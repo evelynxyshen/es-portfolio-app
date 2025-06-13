@@ -1,26 +1,24 @@
 import React from "react";
-import "../assets/styles/main_input.css";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const HomepageHero: React.FC = () => {
   return (
-    <section className="homepage-hero">
-      <div className="relative z-10">
-        <h1 className="homepage-title">Welcome to My Portfolio</h1>
-        <p className="homepage-subtitle">
-          Explore my work as a designer and developer.
+    <div className="homepage-hero">
+      <div className="hero-content">
+        <h1 className="hero-title">Welcome to Evelyn's Portfolio1</h1>
+        <p className="hero-subtitle">
+          A Designer & Developer creating beautiful and functional digital
+          experiences.
         </p>
         <div className="hero-buttons">
-          {/* Use Link for navigation */}
-          <Link to="/contact" className="hero-button">
+          <a href="/portfolio" className="hero-button">
+            View My Work
+          </a>
+          <a href="#contact" className="hero-button-secondary">
             Contact Me
-          </Link>
-          <Link to="/portfolio" className="hero-button-secondary">
-            View Portfolio
-          </Link>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

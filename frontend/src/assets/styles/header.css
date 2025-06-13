@@ -1,0 +1,40 @@
+/* Header Container */
+.header {
+  @apply fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-gray-800;
+}
+
+/* Logo */
+.logo {
+  @apply text-cyan-400 font-mono text-xl font-semibold tracking-wide;
+}
+
+/* Desktop Navigation */
+.nav {
+  @apply hidden md:flex space-x-8 text-sm font-light text-gray-300;
+}
+
+.nav-link {
+  @apply hover:text-white relative;
+}
+
+.nav-link::after {
+  @apply absolute left-0 -bottom-1 h-[1px] w-0 bg-cyan-400 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  @apply md:hidden text-gray-300;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  @apply md:hidden bg-black border-t border-gray-800;
+}
+
+.mobile-nav-link {
+  @apply hover:text-white transition-colors;
+}

@@ -63,7 +63,6 @@ storybook-static/
 .tailwind/
 
 # Ignore compiled CSS
-*.css
 *.css.map
 
 # Virtual environment
